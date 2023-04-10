@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
+	<title>My PDF Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
-	<p>Click the link below to open the PDF file in a new tab:</p>
-	<a href="JPI - brochure.pdf"></a>
+<body onload="openPDF()">
+	<script>
+		function openPDF() {
+			window.open('JPI - brochure.pdf', '_self');
+		}
+	</script>
 </body>
 </html>
